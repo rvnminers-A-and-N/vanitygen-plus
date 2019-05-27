@@ -267,6 +267,7 @@ main(int argc, char **argv)
 					"NYAN : Nyancoin : K\n"
 					"OK : OK Cash : P\n"
 					"OMC : Omnicoin : o\n"
+					"PGN: Pigeoncoin : P\n"
 					"PIGGY : Piggycoin : p\n"
 					"PINK : Pinkcoin : 2\n"
 					"PIVX : PIVX : D\n"
@@ -1221,6 +1222,14 @@ main(int argc, char **argv)
 					"Generating Yenten Address\n");
 					addrtype = 78;
 					privtype = 123;
+					break;
+			}
+			else
+			if (strcmp(optarg, "PGN")== 0) {
+				fprintf(stderr,
+					"Generating Pigeoncoin Address\n");
+					addrtype = 55;
+					privtype = 128;
 					break;
 			}
 			else

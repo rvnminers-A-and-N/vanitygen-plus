@@ -520,6 +520,7 @@ main(int argc, char **argv)
 					"MOG : Mogwai : M\n"
 					"MONA : Monacoin : M\n"
 					"MUE : Monetary Unit : 7\n"
+					"MYNT: Myntcoin: B\n"
 					"MYRIAD : Myriadcoin : M\n"
 					"MZC : Mazacoin : M\n"
 					"NEET : NEETCOIN : N\n"
@@ -1487,6 +1488,14 @@ main(int argc, char **argv)
 					"Generating Yenten Address\n");
 					addrtype = 78;
 					privtype = 123;
+					break;
+			}
+			else
+			if (strcmp(optarg, "MYNT")== 0) {
+				fprintf(stderr,
+					"Generating Ritocoin Address\n");
+					addrtype = 50;
+					privtype = 128;
 					break;
 			}
 			else

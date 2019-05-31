@@ -257,6 +257,7 @@ main(int argc, char **argv)
 					"MOG : Mogwai : M\n"
 					"MONA : Monacoin : M\n"
 					"MUE : Monetary Unit : 7\n"
+					"MYNT: Myntcoin: M\n"
 					"MYRIAD : Myriadcoin : M\n"
 					"MZC : Mazacoin : M\n"
 					"NEET : NEETCOIN : N\n"
@@ -613,6 +614,14 @@ main(int argc, char **argv)
 				fprintf(stderr,
 					"Generating RIC Address\n");
 					addrtype = 60;
+					privtype = 128;
+					break;
+			}
+			else
+			if (strcmp(optarg, "MYNT")== 0) {
+				fprintf(stderr,
+					"Generating MYNT Address\n");
+					addrtype = 50;
 					privtype = 128;
 					break;
 			}

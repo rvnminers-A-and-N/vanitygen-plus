@@ -49,9 +49,13 @@ Windows GPU: `oclvanitygen.exe -C RITO -o results.txt -i -k BFoo`
  * `BFoo` : the address you are searching for (RITO addresses start with "B")  
 
 Example output of above command:  
+
 >Generating RITO Address  
+
 >Difficulty: 4553521  
+
 >RITO Address: BFoo4XJNzKk2CZW2cJZ6nP9ncVNvdQrp8V
+
 >RITO Privkey: 5gKsgY4Bf7cbqZtW2CX1Lxy5j99oRa6YBT7TQDj7AuJCPAAb9FW
 
 **If you have dependency errors on Linux or need instructions for compiling from source(Kaling Rolling/Linux) see link below:**  

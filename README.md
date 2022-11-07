@@ -4,7 +4,13 @@ Vanitygen PLUS!
 
 ** This is released only as source code. You need to compile it yourself. I will release compiled versions soon!**  
 
-**WARNING!** While this program has been thoroughly tested, issues could occur in rare cases. Please, first attempt importing an address into a running node. Then, send a tiny amount of your coin that you do not mind losing to the address, and perform a test spend. I will not be held liable for lost funds as a result of the use of this program. You are responsible for your own use of this open source software, on which many crypto community members have labored to make a reality.
+**WARNING!** 
+
+While this program has been thoroughly tested, issues could occur in rare cases. Please, first attempt importing an address into a running node. 
+
+Then, send a tiny amount of your coin that you do not mind losing to the address, and perform a test spend. 
+
+I will not be held liable for lost funds as a result of the use of this program. You are responsible for your own use of this open source software, on which many crypto community members have labored to make a reality.
 
 Please be sure to report any issues or bugs and fixes, I am happy to accept pull requests! If you have an altcoin you would like to add please let me know immediately!  
 

@@ -249,7 +249,7 @@ main(int argc, char **argv)
 					"LEAF : Leafcoin : f\n"
 					"LMC : LomoCoin : L\n"
 					"LTC : Litecoin : L\n"
-					"MEWC : Meowcoin : M\m"
+					"MEWC : Meowcoin : M\n"
 					"MGD : MassGrid : M\n"
 					"MMC : Memorycoin : M\n"
 					"MNC : Mincoin : M\n"

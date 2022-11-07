@@ -2,11 +2,11 @@
 Vanitygen PLUS!  
 -----
 
-** This is released only as source code. You need to compile it yourself. **  
+** This is released only as source code. You need to compile it yourself. I will release compiled versions soon!**  
 
-**WARNING!** This program has not been thoroughly tested. Please attempt importing an address first into a running node.  Send a tiny amount you don't mind losing to the address. Then perform a test spend. I will not be held liable for lost funds as a result of the use of this program. You are responsible for your use of this open source software.
+**WARNING!** While this program has been thoroughly tested, issues could occur in rare cases. Please, first attempt importing an address into a running node. Then, send a tiny amount of your coin that you do not mind losing to the address, and perform a test spend. I will not be held liable for lost funds as a result of the use of this program. You are responsible for your own use of this open source software, on which many crypto community members have labored to make a reality.
 
-Be sure to report any issues or bugs and fixes, I am happy to accept pull requests! If you have an altcoin you would like to add please let me know.  
+Please be sure to report any issues or bugs and fixes, I am happy to accept pull requests! If you have an altcoin you would like to add please let me know immediately!  
 
 -----
 Getting Started  
@@ -34,7 +34,7 @@ Windows GPU: `oclvanitygen.exe -C LIST`
 A list of all the supported crypto coins will be output.  
 
 Choose your coin from the list noting the ARGUMENT needed for the coin located in the left hand column.  
-For Ritocoin it is RITO. For Bitcoin it is BTC.  Etc...  
+For Meowcoin it is MEOW. For Bitcoin it is BTC.  Etc...  
 
 **Now lets generate a RITO address with the prefix "BFoo":**  
 Linux CPU: `./vanitygen -C RITO -o results.txt -i -k BFoo`  
@@ -42,21 +42,21 @@ Linux GPU: `./oclvanitygen -C RITO -o results.txt -i -k BFoo`
 Windows CPU: `vanitygen.exe -C RITO -o results.txt -i -k BFoo`  
 Windows GPU: `oclvanitygen.exe -C RITO -o results.txt -i -k BFoo`  
 
- * `-C RITO` : Chooses the RITO coin  
+ * `-C MEWC` : Chooses the MEWC coin  
  * `-o results.txt` : saves the matches to results.txt  
  * `-i` : case-Insensitive(do not add this flag to match exact case)  
  * `-k` : keep going even after match is found(do not add this flag to stop after the first match)  
- * `BFoo` : the address you are searching for (RITO addresses start with "B")  
+ * `MFoo` : the address you are searching for (MEWC addresses start with "M")  
 
 Example output of above command:  
 
->Generating RITO Address  
+>Generating MEWC Address  
 
 >Difficulty: 4553521  
 
->RITO Address: BFoo4XJNzKk2CZW2cJZ6nP9ncVNvdQrp8V
+>MEWC Address: MFoo4XJNzKk2CZW2cJZ6nP9ncVNvdQrp8V
 
->RITO Privkey: 5gKsgY4Bf7cbqZtW2CX1Lxy5j99oRa6YBT7TQDj7AuJCPAAb9FW
+>MEWC Privkey: 5gKsgY4Bf7cbqZtW2CX1Lxy5j99oRa6YBT7TQDj7AuJCPAAb9FW
 
 **If you have dependency errors on Linux or need instructions for compiling from source(Kaling Rolling/Linux) see link below:**  
 https://legacysecuritygroup.com/index.php/projects/recent/12-software/35-oclvanitygen-compiling-and-use  
@@ -79,30 +79,30 @@ rm libc6-udeb_2.24-11+deb9u3_amd64.udeb && rm libcrypto1.0.2-udeb_1.0.2l-2+deb9u
 Encrypting and Decrypting a vanitygen or oclvanitygen private key  
 -----  
 **Encrypting generated private key:**  
-Linux: `./vanitygen -E password -C AC Aa`  
-Windows: `./vanitygen -E password -C AC Aa`  
+Linux: `./vanitygen -E password -C MEWC MFoo`  
+Windows: `./vanitygen -E password -C MEWC MFoo`  
 *For GPU use "oclvanitygen" in place of "vanitygen"*  
 
- * `-C AC Aa` Choose AsiaCoin and address prefix "Aa"  
+ * `-C MEWC MFoo` Choose Mewocoin and address prefix "MFoo"  
  * `-E password` Encrypt key with password as "password",  
 **NOTE:** It is more secure to use option `-e` with no trailing password,  
 then vanitygen prompts for a password so theres no command history.  
 Also please choose a stronger password than "password".  
 
->Generating AC Address  
->Difficulty: 23   
->AC Pattern: Aa                                                                      
->AC Address: Aa853vQs6QGrTuTHb7Q45tbeB8n4EL47vd  
+>Generating MEWC Address  
+>Difficulty: 4553521   
+>AC Pattern: MFoo                                                                      
+>AC Address: MFoo853vQs6QGrTuTHb7Q45tbeB8n4EL47vd  
 >AC Protkey: yTYFUWAsgFmMxCbKtu3RdrrJXosZrjxiQFA2o43neB4jPpfLe5owNNrteTs8mpvua8Ge  
 
 **Decrypting generated ProtKey with Keyconv:**  
-Linux: `./keyconv -C AC -d yTYFUWAsgFmMxCbKtu3RdrrJXosZrjxiQFA2o43neB4jPpfLe5owNNrteTs8mpvua8Ge`  
-Windows: `keyconv.exe -C AC -d yTYFUWAsgFmMxCbKtu3RdrrJXosZrjxiQFA2o43neB4jPpfLe5owNNrteTs8mpvua8Ge`  
+Linux: `./keyconv -C MEWC -d yTYFUWAsgFmMxCbKtu3RdrrJXosZrjxiQFA2o43neB4jPpfLe5owNNrteTs8mpvua8Ge`  
+Windows: `keyconv.exe -C MEWC -d yTYFUWAsgFmMxCbKtu3RdrrJXosZrjxiQFA2o43neB4jPpfLe5owNNrteTs8mpvua8Ge`  
 
- * `-C AC` Specifies AsiaCoin  
+ * `-C MEWC` Specifies Meowcoin  
  * `-d` means decrypt the protected key of "yTYFUWAsgFmMxCbKtu3RdrrJXosZrjxiQFA2o43neB4jPpfLe5owNNrteTs8mpvua8Ge"  
 
 >Enter import password:  --- Enter "password" or whatever you specified as password and press enter  
->Address: Aa853vQs6QGrTuTHb7Q45tbeB8n4EL47vd  
+>Address: MFoo853vQs6QGrTuTHb7Q45tbeB8n4EL47vd  
 >Privkey: 66GRP2W5H4sWbgrBRAuPc3qZxUtP5boubJ9N2M5wZio6fhWjzbr  
 

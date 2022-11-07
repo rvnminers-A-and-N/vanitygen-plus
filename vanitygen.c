@@ -512,6 +512,7 @@ main(int argc, char **argv)
 					"LEAF : Leafcoin : f\n"
 					"LMC : LomoCoin : L\n"
 					"LTC : Litecoin : L\n"
+					"MEWC : Meowcoin : M\m"
 					"MGD : MassGrid : M\n"
 					"MMC : Memorycoin : M\n"
 					"MNC : Mincoin : M\n"
@@ -1512,6 +1513,14 @@ main(int argc, char **argv)
 					"Generating Pigeoncoin Address\n");
 					addrtype = 55;
 					privtype = 128;
+					break;
+			}
+			else
+			if (strcmp(optarg, "MEWC")== 0) {
+				fprintf(stderr,
+					"Generating Meowcoin Address\n");
+					addrtype = 50;
+					privtype = 112;
 					break;
 			}
 			else
